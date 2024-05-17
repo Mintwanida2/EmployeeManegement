@@ -14,7 +14,7 @@ function renderForm(emp){
         <div class="mx-auto w-full max-w-[550px] bg-white">
             <form action="/employee/save" method="post">
                 <div class="mb-5">
-                    <input  type="hidden" name="empID" id="empID" placeholder="Enter Employee ID" 
+                    <input type="hidden" name="empID" id="empID" placeholder="Enter Employee ID" 
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" value="${emp.empID}"/>
                 </div>
                 <div class="-mx-3 flex flex-wrap">
@@ -23,7 +23,7 @@ function renderForm(emp){
                             <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
                                 First Name
                             </label>
-                            <input type="text" name="fname" id="fname" placeholder="First Name" 
+                            <input  required  type="text" name="fname" id="fname" placeholder="First Name" 
                                 class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" value="${emp.empfName}" />
                         </div>
                     </div>
@@ -32,7 +32,7 @@ function renderForm(emp){
                             <label for="date" class="mb-3 block text-base font-medium text-[#07074D]">
                                 Last Name
                             </label>
-                            <input  type="text" name="lname" id="lname" placeholder="Last Name"
+                            <input  required  type="text" name="lname" id="lname" placeholder="Last Name"
                                 class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" value="${emp.emplName}"/>
                         </div>
                     </div>
@@ -41,21 +41,21 @@ function renderForm(emp){
                     <label for="position" class="mb-3 block text-base font-medium text-[#07074D]">
                         Position
                     </label>
-                    <input  type="text" name="position" id="position" placeholder="Enter position"
+                    <input  required  type="text" name="position" id="position" placeholder="Enter position"
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" value="${emp.empPosition}"/>
                 </div>
                 <div class="mb-5">
                     <label for="salary" class="mb-3 block text-base font-medium text-[#07074D]">
                         Salary
                     </label>
-                    <input  type="text" name="salary" id="salary" placeholder="Enter salary"
+                    <input  required  type="text" name="salary" id="salary" placeholder="Enter salary"
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" value="${emp.empSalary}"/>
                 </div>
                 <div class="mb-5">
                     <label for="phone" class="mb-3 block text-base font-medium text-[#07074D]">
                         Phone Number
                     </label>
-                    <input  type="text" name="phone" id="phone" placeholder="Enter phone number"
+                    <input  required  type="text" name="phone" id="phone" placeholder="Enter phone number"
                         class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" value="${emp.empTel}"/>
                 </div>
                 <div>
